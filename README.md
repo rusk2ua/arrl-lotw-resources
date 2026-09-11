@@ -83,8 +83,7 @@ Planned additions as this grows beyond a single download script:
 - [ ] Incremental sync mode (track `APP_LoTW_LASTQSORX` between runs instead of re-pulling full history)
 - [ ] QSL-confirmed-only report (`qso_qsl=yes` path) for award-tracking use cases
 - [ ] Filtering helpers (by band, mode, DXCC entity, date range) as CLI flags
-- [ ] Parsing/analysis layer to turn ADIF output into a DataFrame for stats (worked DXCC count, band/mode breakdowns, etc.)
-- [ ] Possibly: LoTW certificate/upload-side functions, if useful
+- [ ] Dashboard layer to turn ADIF output into a DataFrame for stats (worked DXCC count, band/mode breakdowns, etc.)
 
 ## License
 
