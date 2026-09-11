@@ -1,11 +1,11 @@
 #!/usr/bin/env python3
 """
-Download K2UA's LoTW log history in ADIF format.
+Download K2XYZ's LoTW log history in ADIF format.
 
 Credentials are pulled from environment variables so this script is safe
 to commit to a public GitHub repo:
 
-    export LOTW_LOGIN="K2UA"
+    export LOTW_LOGIN="K2XYZ"
     export LOTW_PASSWORD="your-lotw-password"
 
 Or use a .env file (see python-dotenv usage below) — just make sure
