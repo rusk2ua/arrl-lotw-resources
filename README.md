@@ -1,4 +1,4 @@
-# lotw-tools
+# LoTW Tools
 
 Python utilities for pulling data from ARRL's [Logbook of The World (LoTW)](https://lotw.arrl.org/) for call sign **K2XYZ**.
 
