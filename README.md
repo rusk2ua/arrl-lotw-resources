@@ -24,7 +24,7 @@ Key parameters used by this project:
 
 | Parameter | Field Value or Format | Why |
 |---|---|---|
-| `login` | your LoTW username | required |
+| `login` | your LoTW username (call sign) | required |
 | `password` | your LoTW password | required |
 | `qso_query` | `1` | required, or no records are returned |
 | `qso_qsl` | `no` | returns **all** QSOs, not just QSL-confirmed ones (default is `yes`, which silently filters to confirmed-only) |
