@@ -82,6 +82,12 @@ Example with an end date and custom output folder:
 python3 lotw_download.py --start-date 2021-04-16 --end-date 2024-12-31 --output-dir logs
 ```
 
+## Syncing with Club Log
+
+Want your LoTW confirmations to show up in [Club Log](https://clublog.org)? You can use the `.adi` file produced by `lotw_download.py` and upload it directly to Club Log — no need to hand Club Log your LoTW credentials or certificates.
+
+See [`CLUBLOG_LOTW_SYNC.md`](CLUBLOG_LOTW_SYNC.md) for the full step-by-step workflow, including a comparison against Club Log's own native two-way LoTW integration if you'd rather go that route instead.
+
 ## Security
 
 - Credentials load from environment variables / `.env` only — never from source.
