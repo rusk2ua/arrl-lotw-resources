@@ -60,15 +60,27 @@ LOTW_PASSWORD=your-lotw-password
 
 ## Usage
 
-### Download full log history
+### Download log history
 
 ```bash
-python3 lotw_download.py
+python3 lotw_download.py --start-date 2021-04-16
 ```
 
 Saves to `adif_downloads/K2XYZ_log_<start-date>_to_<today>.adi` and prints the number of QSO records retrieved.
 
-To change the start date, edit `START_DATE` near the top of `lotw_download.py`.
+Optional flags:
+
+| Flag | Description |
+|---|---|
+| `--start-date` | Earliest QSO date to include, `YYYY-MM-DD` (required) |
+| `--end-date` | Latest QSO date to include, `YYYY-MM-DD` (default: no upper bound, through today) |
+| `--output-dir` | Directory to save the `.adi` file into (default: `adif_downloads`) |
+
+Example with an end date and custom output folder:
+
+```bash
+python3 lotw_download.py --start-date 2021-04-16 --end-date 2024-12-31 --output-dir logs
+```
 
 ## Security
 
@@ -80,10 +92,10 @@ To change the start date, edit `START_DATE` near the top of `lotw_download.py`.
 
 Planned additions as this grows beyond a single download script:
 
-- [ ] Incremental sync mode (track `APP_LoTW_LASTQSORX` between runs instead of re-pulling full history)
-- [ ] QSL-confirmed-only report (`qso_qsl=yes` path) for award-tracking use cases
-- [ ] Filtering helpers (by band, mode, DXCC entity, date range) as CLI flags
-- [ ] Dashboard layer to turn ADIF output into a DataFrame for stats (worked DXCC count, band/mode breakdowns, etc.)
+* Incremental sync mode (track `APP_LoTW_LASTQSORX` between runs instead of re-pulling full history)
+* QSL-confirmed-only report (`qso_qsl=yes` path) for award-tracking use cases
+* Filtering helpers (by band, mode, DXCC entity, date range) as CLI flags
+* Dashboard layer to turn ADIF output into a DataFrame for stats (worked DXCC count, band/mode breakdowns, etc.)
 
 ## License
 
