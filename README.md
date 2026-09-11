@@ -34,7 +34,17 @@ Key parameters used by this project:
 
 **Note:** `qso_qslsince` only applies when `qso_qsl=yes`; `qso_qsorxsince` only applies when `qso_qsl=no`. Don't mix them up when adjusting filters.
 
-## Setup
+## URL-only method
+
+You can construct a URL with your call sign, LoTW password, and desired start date, using this URL format. LoTW will start the process and your browser will begin downloading the file, which may be large, depending on the start date and the number of contacts in your log. Update the login, password, and startdate fields in the URL to use it.
+
+```
+https://lotw.arrl.org/lotwuser/lotwreport.adi?login=K2XYZ&password=YOUR_PASSWORD&qso_query=1&qso_qsl=no&qso_startdate=2021-04-16&qso_mydetail=yes&qso_qsldetail=yes
+```
+
+## Python Method
+
+### Setup
 
 ```bash
 git clone https://github.com/rusk2ua/arrl-lotw-resources.git
